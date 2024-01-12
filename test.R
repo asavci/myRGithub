@@ -1,11 +1,12 @@
-head(mtcars)
+str(airquality)
 
-a<-2
-b<-5
-c<-a+b
+Temperature <- airquality$Temp
+hist(Temperature)
 
-d<-c/2
-d
+#normal dist
+x <- rnorm(1000, mean=10, sd=2)
+hist(x)
 
-
-e<-1000
+#uniform distribution
+y <- runif(1000)
+hist(y)
